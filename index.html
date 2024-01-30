@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day</title>
+  <link rel="stylesheet" href="style.css">
+  <style></style>    
+</head>
+<body>
+    <div class="centered-content">
+        <h1 id="questionTitle">WILL YOU BE MY VALENTINE MY POOKIE WOOKIE SNOOKIE COOKIE DIPPED DRUMSTICK?</h1>
+        <h1 id="yesTitle" style="display: none;">I WAV YOU ❤️</h1>
+        <img src="assets/images/question.png" alt="Question" id="valentineImage">
+        <img style="display: none;" src="assets/images/no.png" alt="No" id="noImage">
+        <img style="display: none;" src="assets/images/yes.png" alt="Yes" id="yesImage">
+        <h1 id="yesCaption" style="display: none;">Happy Valentine's Day Bubs</h1>
+        <div>
+            <button id="yesButton" onclick="yesButton()">YES</button>
+            <button id="noButton" onclick="moveNoButton()">NO</button>
+        </div>
+    </div>
+    <audio controls loop style="display: none;" id="musicAudio">
+        <source src="assets/sounds/hata.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio controls style="display: none;" id="noAudio">
+        <source src="assets/sounds/boom.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio controls style="display: none;" id="yesAudio">
+        <source src="assets/sounds/glitter.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <canvas id="confetti" style="display: none;"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@0.9.0/dist/js-confetti.browser.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

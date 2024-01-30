@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    background-color: pink;
+  }
+  
+.centered-content {
+    text-align: center;
+  }
+  
+h1 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+img {
+    max-width: 100%;
+  }
+
+button {
+    width: 100px;
+    margin: 20px 20px 0 20px;
+    position: relative;
+  }
