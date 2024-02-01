@@ -92,5 +92,17 @@ function yesButton() {
         emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸', '🎉', '🌟', '🍭', '🌼', '💖', '🦄'],
         emojiSize: 100,
         confettiNumber: 100,
-    })
+    });
 }
+
+function confetti() {
+    if (yesImage.style.display !== 'none') {
+        jsConfetti.addConfetti({
+            emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸', '🎉', '🌟', '🍭', '🌼', '💖', '🦄'],
+            emojiSize: 100,
+            confettiNumber: 100,
+        });
+    }
+}
+
+document.addEventListener('click', confetti);
